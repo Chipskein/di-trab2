@@ -136,6 +136,28 @@ footer{
     border-radius: 50px;
 }
 
+
+.top-manga-image{
+    width: 200px;
+    height: 300px;
+}
+.top-manga-div{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: justify;
+}
+.top-manga-div-card{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    text-wrap:wrap;
+    width: 700px;
+    height: 400px;
+    white-space: normal;
+    word-break: break-all;
+}
+
 @media only screen and (max-width: 600px) {
     .footer-image{
         display: none;
@@ -150,6 +172,20 @@ footer{
         justify-content: center;
         justify-self: center;
         justify-items: center;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .top-manga-div{
+        display: flex;
+        justify-content: center;
+    }
+    .top-manga-div-card{
+        margin: 20px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: auto;
+        height: auto;
     }
 }
 
