@@ -37,8 +37,11 @@ header{
 
 main{
     background-color: rgb(231, 231, 231);
-    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     min-height: 750px;
+    display: flex;
+    justify-content: center;
 }
 footer{
     border-top: rgba(254,0,0,1) 2px solid;
@@ -69,12 +72,69 @@ footer{
     padding-left: 2px;
 }
 
+#root-article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.title-list{
+    display: flex;
+    justify-content: center;
+}
 
+.manga-card{
+    border: 2px solid black;
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+.manga-card:hover{
+    background-color: red;
+    border: 2px solid rgb(255, 0, 0);
+    width: 310px;
+    height: 410px;
+    position: relative;
+    box-shadow: 0px 5px 10px 15px rgba(255, 0, 0, 0.439);
+}
+.manga-info{
+    float:left;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: 0px;
+    z-index: 1000;
+    background-color: #a207079a;
+    color: #FFFFFF;
+    font-weight: bold;
+}
 
-
-
-
-
+.manga-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+}
+.manga-image{
+    width: 300px;
+    height: 400px;
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+}
+.search-bar-input{
+    border-radius: 5px;
+    border: 1px;
+    width: 300px;
+}
+.search-bar-send{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
 
 @media only screen and (max-width: 600px) {
     .footer-image{
