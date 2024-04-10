@@ -1,0 +1,77 @@
+form{
+    margin: 50px;
+    display: grid;
+    grid-template-columns:1fr ;
+    grid-template-rows: 0.25fr 0.25fr 0.25fr;
+}
+fieldset{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.input{
+    margin: 2px;
+    width: 180px;
+    height: 20px;    
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 20px;
+    padding-left: 5px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+input[type="file"]{
+    display: none;
+}
+.manga-image{
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+}
+.form-div{
+    display: flex;
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.446);
+    box-shadow: inset  0px 5px 10px 5px rgba(59, 59, 59, 0.446);
+    justify-content: center;
+    background-color: white;
+    width: 500px;
+    height: 800px;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+.submit>input:hover{
+    border: 2px solid white;
+    background-color: rgb(223, 24, 24);
+    color: white;
+}
+.submit>input{
+    border: 2px solid rgb(223, 24, 24);
+    background-color: white;
+    color: rgb(223, 24, 24);
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 574px) {
+    .form-div{
+        display: flex;
+        border: none;
+        border-radius: 0px;
+        justify-content: center;
+        background-color: white;
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+    }
+}

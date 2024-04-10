@@ -7,6 +7,7 @@
     <title>MangaPirate</title>
     <link rel="stylesheet" href="../assets/css/index.css">
     <link rel="stylesheet" href="../assets/css/hamburger.css">
+    <link rel="stylesheet" href="../assets/css/create-manga.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -37,7 +38,38 @@
         <div></div>
     </header>
     <main>
-        
+        <div class="form-div">
+            <form>
+                <fieldset>
+                    <label for="image">
+                        <img class="manga-image" src="../assets/images/buggy.png" alt="Manga image">
+                    </label>
+                    <input type="file" name="image" id="image" required>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="name">Nome</label>
+                    <input class="input" type="text" name="name" id="name" required>
+    
+                    <label for="author">Autor</label>    
+                    <input class="input" type="text" name="author" id="author" required>
+                    
+                </fieldset>
+                <fieldset>
+                    <label for="num_chapters">Número Capitulos</label>
+                    <input class="input" type="number"  min="0" name="num_chapters" id="num_chapters"required>
+                    <label for="date_published">Data Publicação</label>
+                    <input class="input" type="date" name="date_published" id="date_published" required>
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input class="input" type="email" name="email" id="email" required>
+                </fieldset>
+                <div class="submit">
+                    <input type="submit" value="Cadastrar">
+                </div>
+            </form>
+        </div>
     </main>
     <footer id="footer">
         <div class="div-footer-info">
