@@ -3,7 +3,10 @@ body{
     margin: 0;
     display: block;
     padding: 0;
+    font-family: "Poppins","Noto Sans", sans-serif;
+    font-style:normal;
 }
+
 .logo{
     width: 120px;
 }
