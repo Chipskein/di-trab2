@@ -19,7 +19,7 @@
    
    z-index: 1;
    
-   -webkit-user-select: none;
+   /*-webkit-user-select: none;*/
    user-select: none;
  }
  
@@ -51,7 +51,7 @@
    opacity: 0; /* hide this */
    z-index: 2; /* and place it over the hamburger */
    
-   -webkit-touch-callout: none;
+   /*-webkit-touch-callout: none;*/
  }
  
  /*
@@ -129,7 +129,7 @@
    
    background: #ededed;
    list-style-type: none;
-   -webkit-font-smoothing: antialiased;
+   /*-webkit-font-smoothing: antialiased;*/
    /* to stop flickering of text in safari */
    
    transform-origin: 0% 0%;
